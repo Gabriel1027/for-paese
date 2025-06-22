@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>RiseForPeace</title><link rel="stylesheet" href="style.css" />
+<script src="script.js" defer></script></head><body><header><div class="logo">RiseForPeace</div>
+<div class="lang-switch"><button onclick="switchLang('en')">EN</button>
+<button onclick="switchLang('ru')">RU</button><button onclick="switchLang('am')">HY</button></div></header>
+<section id="hero"><video autoplay muted loop id="bg-video">
+<source src="media/peace-video.mp4" type="video/mp4" /></video>
+<div class="overlay-text"><h1 data-en="Rise For Peace" data-ru="Подъём ради мира" data-am="Խաղաղության համար">Rise For Peace</h1>
+<p data-en="Even $5 can change someone's life." data-ru="Даже $5 могут изменить чью-то жизнь." data-am="Նույնիսկ $5-ը կարող է փոխել մեկի կյանքը։">Even $5 can change someone's life.</p>
+<a href="#support" class="btn">Help Now</a></div></section>
+<section id="about"><h2 data-en="About Us" data-ru="О нас" data-am="Մեր մասին">About Us</h2>
+<p data-en="We help civilians suffering from war in different countries."
+data-ru="Мы помогаем мирным жителям, пострадавшим от войны в разных странах."
+data-am="Մենք օգնում ենք պատերազմից տուժած խաղաղ բնակիչներին տարբեր երկրներում։">
+We help civilians suffering from war in different countries.</p></section>
+<section id="news"><h2 data-en="News" data-ru="Новости" data-am="Նորություններ">News</h2>
+<p data-en="Latest updates from conflict zones." data-ru="Последние новости из зон конфликта."
+data-am="Վերջին նորությունները հակամարտության գոտիներից։">Latest updates from conflict zones.</p></section>
+<section id="goal"><h2 data-en="Our Goal" data-ru="Наша цель" data-am="Մեր նպատակը">Our Goal</h2>
+<p data-en="To unite people and offer support where it's most needed."
+data-ru="Объединить людей и предложить помощь там, где это наиболее необходимо."
+data-am="Միավորել մարդկանց և օգնել այնտեղ, որտեղ ամենաշատն է պետք։">
+To unite people and offer support where it's most needed.</p></section>
+<section id="support"><h2 data-en="Support Now" data-ru="Поддержите сейчас" data-am="Աջակցեք հիմա">Support Now</h2>
+<div class="donate-buttons"><button onclick="window.open('https://idram.am', '_blank')">Donate via Idram</button>
+<button onclick="toggleUSDT()">Donate with USDT (TRC20)</button></div>
+<div id="usdt-modal" class="modal hidden"><p>USDT Wallet Address:</p>
+<input type="text" value="TR2wu92PzF5cZSP5cteoARdfHgxt9sHBzk" id="usdt-address" readonly />
+<button onclick="copyUSDT()">📋 Copy Address</button></div></section>
+<section id="contact"><h2 data-en="Contact Us" data-ru="Связаться с нами" data-am="Կապ մեզ հետ">Contact Us</h2>
+<p>Email: gabrielyeghiazaryan@gmail.com</p></section></body></html>
